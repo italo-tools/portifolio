@@ -229,7 +229,6 @@ main {
   padding: 5px 15px;
 }
 
-/* formulário */
 #style-space {
   width: 90%;
   display: flex;
@@ -319,4 +318,4 @@ form {
     margin: 20px auto;
     display: none;
   transform: translateY(200%);
-}
+    }
