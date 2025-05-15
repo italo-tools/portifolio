@@ -1,0 +1,17 @@
+.producao {
+  border: 5px solid darkred;
+  border-radius: 20px;
+  margin: 20% auto;
+  width: 80%;
+}
+
+.producao h2 {
+  text-align: center;
+  color: crimson;
+}
+
+.producao p {
+  text-align: center;
+  color: aliceblue;
+  font-weight: bolder;
+}

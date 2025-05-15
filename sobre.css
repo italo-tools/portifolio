@@ -1,0 +1,383 @@
+/* Reset e base */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: "Times New Roman", sans-serif;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+
+/* Menu e overflay */
+#vazio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  display: none;
+  z-index: 900;
+}
+
+/* Botão para abrir o menu */
+#side-bar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* Menu lateral */
+#menu {
+  position: fixed;
+  top: -200vh;
+  left: 0;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+#menu.active {
+  top: 0;
+}
+
+#menu ul {
+  margin: 4rem 30px 0 10px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#menu .menu-list {
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+
+#menu a {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Times New Roman", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+
+/* cabeçalho */
+#cabeca {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  display: block;
+  border-bottom: 3px solid white;
+}
+
+/* Imagem de perfil */
+#perfil {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 8em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+
+/* Nome e Sobre-mim */
+#nome h1 {
+  text-align: center;
+  margin-top: 8rem;
+  font-style: italic;
+  color: whitesmoke;
+}
+
+#nome p {
+  color: cyan;
+  font-style: italic;
+  font-family: Georgia, sans-serif;
+  text-align: center;
+  margin-top: -1.6em;
+  font-size: 0.8em;
+}
+
+/* Sobre mim */
+.sobre-mim {
+  text-align: center;
+  width: fit-content;
+  padding: 6px 15px;
+  white-space: nowrap;
+  margin: 30px auto;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 2em;
+  color: white;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: bold;
+}
+
+
+/*Sessão e cards */
+.sessao {
+  margin-bottom: 20px;
+}
+
+/* primario */
+.primario {
+  text-align: center;
+  border: 1px solid aqua;
+  padding: 10px;
+  margin: 25px auto;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* secundario */
+.secundario {
+  margin: 25px auto;
+  text-align: center;
+  border: 1px solid #808080;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Terciário */
+.terciario {
+  margin: 25px auto;
+  text-align: center;
+  border: 1px solid aquamarine;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* status */
+.status {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 165px;
+}
+
+/* Títulos */
+.primario h3, 
+.secundario h3, 
+.terciario h3, 
+.secundario h4 {
+  margin: 10px auto;
+  font-size: 1.5em;
+  color: white;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: bold;
+  border-bottom: 4px solid #808080;
+  padding: 8px 15px;
+  border-radius: 25px;
+  width: fit-content;
+  white-space: nowrap;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Parágrafos */
+.primario p, 
+.secundario p, 
+.terciario p {
+  text-align: center;
+  color: white;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
+}
+
+/* Cartão de Motivação */
+.motivacao {
+  margin: 25px auto;
+  text-align: center;
+  border: 3px solid #808080;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cartão Evoluir */
+.evoluir {
+  margin: 25px auto;
+  text-align: center;
+  border: 1px solid #808080;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.evoluir h4 {
+  margin: 10px auto;
+  font-size: 1.5em;
+  color: white;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: bold;
+  border-bottom: 4px solid #808080;
+  padding: 8px 15px;
+  border-radius: 25px;
+  width: fit-content;
+  white-space: nowrap;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.evoluir p {
+  text-align: center;
+  color: white;
+  font-family: Georgia, sans-serif;
+  font-size: 1em;
+}
+
+/* motivação */
+article {
+  margin: 50px auto;
+  text-align: center;
+  border: 3px solid aquamarine;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.8em;
+  font-style: italic;
+  color: aliceblue;
+  font-family: Georgia, sans-serif;
+}
+
+
+/*Rodapé */
+#foo {
+  border-top: 3px solid aqua;
+  background-color: aliceblue;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Parágrafos do rodapé */
+#foo p {
+  font-size: 0.7em;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#foo .h2 h2 {
+  text-align: center;
+  font-size: 0.9em;
+  font-family: "Times New Roman", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Contato no rodapé */
+#foo #contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#foo #contato i {
+  font-size: 2em;
+}
+
+#foo #contato a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#foo a {
+  text-decoration: none;
+  color: green;
+}
+
+/* Seção Social no rodapé */
+#foo #social {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  gap: 5px;
+  justify-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#foo #social img {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+/* Efeito Ripple nos links sociais */
+#foo #social .ripple-link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#foo #social .ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background: rgba(0, 255, 0, 0.4);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+#foo #social p {
+  font-size: 1.5em;
+}
+
+/* Selo interativo no rodapé */
+#foo .selo {
+  width: 4rem;
+  height: 4rem;
+  margin: 10px auto;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.selo:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}

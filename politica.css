@@ -1,0 +1,55 @@
+#principal h1 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.3em;
+  font-style: italic;
+  padding: 10px;
+}
+
+#principal p {
+  color: white;
+  text-align: justify;
+  margin: 10px;
+  padding: 5px;
+}
+
+#principal h2 {
+  color: white;
+  text-align: left;
+  font-size: 1em;
+  padding: 5px;
+}
+
+#principal .git {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#principal .git a {
+  text-decoration: none;
+  color:green;
+  font-weight: bold;
+}
+#principal .politica {
+  border: 1.5px solid white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#principal .vigencia {
+  text-align: center;
+  font-size: 0.7em;
+  border: 1.9px solid aqua;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
