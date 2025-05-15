@@ -1,14 +1,11 @@
 /* Global */
-main {
-  transform: translateY(-15%);
-  margin: 0;
-  padding: 0;
-  width: 100%;
+.translate {
+  transform: translateY(-70px);
+  margin: 10px auto;
 }
 
 /* Seção Sobre */
 #sobre-mim {
-  transform: translateY(-20%);
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -31,7 +28,7 @@ main {
   margin-bottom: 20px;
 }
 
-.saiba-mais {
+.button-primario {
   display: block;
   width: fit-content;
   white-space: nowrap;
@@ -57,9 +54,11 @@ main {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+
+
 /* Seção Experiência */
 #exp {
-  margin: 5% auto;
+  margin: 0 auto;
   width: 90%;
   box-sizing: border-box;
   padding: 15px;
@@ -116,7 +115,7 @@ main {
 
 /* Seção Escolaridade */
 #estudo {
-  margin: 5% auto;
+  margin: 50px auto;
   width: 90%;
   box-sizing: border-box;
   padding: 20px;
@@ -173,8 +172,7 @@ main {
 
 /* Seção Trabalho */
 #trabalho {
-  margin: auto;
-  transform: translateY(20%);
+  margin: 20px auto;
   width: 90%;
   box-sizing: border-box;
   padding: 10px;
@@ -216,26 +214,12 @@ main {
   margin: 2px 0 0 0;
 }
 
-.premium a {
-  display: grid;
-  justify-items: center;
-  text-decoration: none;
-  font-family: "Times New Roman", sans-serif;
-  margin: 20px auto;
-  border-bottom: 2px solid green;
-  color: crimson;
-  border-radius: 15px;
-  width: fit-content;
-  padding: 5px 15px;
-}
-
 #style-space {
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  transform: translateY(30%);
+  margin: 30px auto;
   
 }
 
@@ -283,12 +267,13 @@ form {
   margin-top: 15px;
 }
 
-.button {
+.button-secundario {
   color: darkred;
   font-weight: bold;
   font-size: 1.3em;
   margin: 15px auto;
   padding: 5px 15px;
+  border-bottom: 2px solid darkred;
   border-radius: 20px;
   background-color: black;
 }
@@ -315,7 +300,6 @@ form {
     padding: 15px;
     border-radius: 10px;
     width: fit-content;
-    margin: 20px auto;
+    margin-top: 100px;
     display: none;
-  transform: translateY(200%);
-    }
+  }
