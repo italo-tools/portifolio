@@ -3,12 +3,13 @@ main {
   transform: translateY(-15%);
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /* Seção Sobre */
 #sobre-mim {
   transform: translateY(-20%);
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 20px;
@@ -226,4 +227,96 @@ main {
   border-radius: 15px;
   width: fit-content;
   padding: 5px 15px;
+}
+
+/* formulário */
+#style-space {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  transform: translateY(30%);
+  
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 2rem;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.stars input:checked ~ label {
+  color: crimson;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+  color: crimson;
+}
+
+form {
+  display: flex;
+  border: 2px solid #808080;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.style-form {
+  border: 1.5px solid #808080;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: black;
+  padding: 10px 15px;
+  margin-top: 15px;
+}
+
+.button {
+  color: darkred;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 15px auto;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+
+.titulo-form {
+  color: aliceblue;
+  margin-top: 0 auto;
+}
+
+.p-form {
+  color: darkred;
+  margin: 0 auto;
+}
+
+#mensagem-agradecimento {
+    color: aliceblue;
+    font-size: 1.rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid darkred;
+  border-radius: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    display: none;
+  transform: translateY(200%);
 }
