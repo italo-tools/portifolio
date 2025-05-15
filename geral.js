@@ -16,6 +16,33 @@ menuOverlay.addEventListener("click", () => {
     menuOverlay.style.display = "none";
 });
 
+// formulário
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const mensagem = document.createElement("p");
+mensagem.innerText = "Muito obrigado por sua avaliação! 😋";
+mensagem.id = "mensagem-agradecimento";
+form.parentNode.appendChild(mensagem);
+    form.parentNode.appendChild(mensagem);
+
+    
+    const ultimoEnvio = localStorage.getItem("ultimaAvaliacao");
+    const agora = new Date().getTime();
+    const vinteQuatroHoras = 24 * 60 * 60 * 1000;
+
+    if (ultimoEnvio && agora - ultimoEnvio < vinteQuatroHoras) {
+        form.style.display = "none";
+        mensagem.style.display = "block";
+    }
+
+    // Evento de envio do formulário
+    form.addEventListener("submit", function (e) {localStorage.setItem("ultimaAvaliacao", agora);
+        form.style.display = "none";
+        mensagem.style.display = "block";
+    });
+});
+
+
 // seção links footer
 function playSound() {
   const sound = document.getElementById("click-sound");
@@ -34,4 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
