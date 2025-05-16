@@ -1,226 +1,270 @@
-/* Global */
-.translate {
-  transform: translateY(-70px);
-  margin: 10px auto;
+/* Topo do corpo da pagina */
+#corpo {
+  width: 100%;
+  justify-content: center;
+  
+  
 }
 
-/* Seção Sobre */
+#principal {
+  width:100%;
+  justify-items: center;
+  
+}
+
+#nome {
+  color: white;
+  
+  
+}
+
+#nome h1 {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  color: white;
+  font-family: times new roman, sans-serif;
+  font-size: 1.7em;
+}
+
+#nome p {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  color: aqua;
+  margin-top: -27px;
+  margin-bottom: 25px;
+  font-family: roboto, georgia, sans-serif;
+}
+
+#nome #slogan {
+  color: aqua;
+  
+}
+
 #sobre-mim {
+  display: block;
   width: 90%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding: 20px;
-  border-radius: 15px;
+  justify-items: center;
+  margin-bottom: 30px;
 }
 
 #sobre-mim h2 {
-  margin-top: 9rem;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.5em;
+  color: white;
   text-align: center;
-  font-style: italic;
-  border-radius: 15px;
-  color: whitesmoke;
+  font-family: times new roman, sans-serif;
+  border-bottom: 2.5px solid green;
+  border-radius: 25px;
+  padding: 2px 15px;
+  
 }
 
 #sobre-mim p {
   font-size: 1em;
   color: white;
   text-align: center;
-  margin-bottom: 20px;
+  font-family: georgia, sans-serif;
+  font-style: italic;
+  padding: 15px;
 }
 
-.button-primario {
+#primeiro-card {
   display: block;
-  width: fit-content;
-  white-space: nowrap;
-  margin: 0 auto;
-  padding: 10px 20px;
-  color: aliceblue;
-  border-bottom: 3px solid greenyellow;
+  justify-items: center;
+  border: 1.5px solid #808080;
+  border-radius: 25px;
+  
+}
+
+.primeiro-botao {
+  display: inline-block;
   text-decoration: none;
+  font-family: times new roman, georgia, sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1.3em;
+  border-bottom: 3px solid green;
+  border-top: 2px solid green;
   border-radius: 15px;
-  font-weight: bold;
-  font-size: 1.2em;
-  transition: background-color 0.3s;
+  padding: 5px 15px;
+  margin: 10px auto;
+  bottom: 10px;
+  position: relative;
 }
 
-.sobre-card {
+#xp {
   width: 90%;
-  display: block;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 15px auto;
-  background-color: rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 1.5px solid #808080;
+  justify-items: center;
+  border-radius: 25px;
+  
 }
 
-
-
-/* Seção Experiência */
-#exp {
-  margin: 0 auto;
-  width: 90%;
-  box-sizing: border-box;
-  padding: 15px;
-  border: 1px solid #808080;
-  border-radius: 15px;
-}
-
-#exp h2 {
+#xp h2 {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  border-bottom: 3px solid aquamarine;
-  border-radius: 15px;
-  padding: 7px 3px;
+  font-weight: bolder;
+  font-style: italic;
+  border-bottom: 1.5px solid aquamarine;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-family: times new roman, sans-serif;
 }
 
-.exp-card {
+.xp-card {
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 15px;
+  width: 85%;
+  border: 1.5px solid aqua;
+  border-radius: 25px;
+  padding: 10px;
   margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.exp-card:hover {
+.xp-card:hover {
   transform: scale(1.02);
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.10);
 }
 
-.exp-card i {
+.xp-card i {
   color: white;
-  font-size: 1.5em;
-  min-width: 30px;
+  font-size: 25px;
 }
 
-.exp-card .cargo {
+.cargo {
+  position: relative;
   color: white;
   font-weight: bold;
-  font-size: 0.9em;
-  margin: 0;
+  font-size: 1.1em;
+  font-family: times new roman, sans-serif;
+  
 }
 
-.exp-card .tempo {
-  color: #808080;
-  font-size: 0.9em;
-  margin: 2px 0 0 0;
+.tempo {
+  color: #808082;
+  font-weight: bold;
+  
 }
 
-/* Seção Escolaridade */
-#estudo {
-  margin: 50px auto;
+#escolaridade {
   width: 90%;
-  box-sizing: border-box;
-  padding: 20px;
-  border: 2px solid white;
-  border-radius: 15px;
+  border: 1.5px solid #808080;
+  justify-items: center;
+  border-radius: 25px;
+  margin: 30px auto;
 }
 
-#estudo h2 {
+#escolaridade h2 {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-  border-bottom: 3px solid aliceblue;
-  border-radius: 15px;
-  padding: 7px 3px;
+  font-weight: bolder;
+  font-style: italic;
+  border-bottom: 1.5px solid aqua;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-family: times new roman, sans-serif;
 }
 
 .edu-card {
+  border: 1.5px solid aquamarine;
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 15px;
+  width: 85%;
+  border-radius: 25px;
+  padding: 10px;
   margin-bottom: 15px;
-  background-color: rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.edu-card:hover {
-  transform: scale(1.02);
-  background-color: rgba(255, 255, 255, 0.08);
+.nivel {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: roboto, times new roman, sans-serif;
 }
 
 .edu-card i {
   color: white;
-  font-size: 1.5em;
-  min-width: 30px;
+  font-size: 25px;
+  
 }
 
-.edu-card .nivel {
-  color: white;
+.info {
+  color: #808082;
   font-weight: bold;
-  font-size: 1em;
-  margin: 0;
+  font-family: roboto, times new roman, sans-serif;
 }
 
-.edu-card .info {
-  color: #808080;
-  font-size: 0.9em;
-  margin: 2px 0 0 0;
-}
-
-/* Seção Trabalho */
-#trabalho {
-  margin: 20px auto;
-  width: 90%;
-  box-sizing: border-box;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 15px;
-}
-
-#trabalho h2 {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.8em;
-  border-bottom: 3px solid darkred;
-  border-radius: 15px;
-  padding: 5px 15px;
-  width: fit-content;
-  margin: 15px auto;
-}
-
-.premium {
-  display: block;
-  border-radius: 10px;
-  margin: 15px auto;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.premium:hover {
+.edu-card:hover {
   transform: scale(1.02);
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.10);
 }
 
-.tarefa {
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.3em;
-  font-family: Georgia, sans-serif;
+#parceria {
+  width: 90%;
+  border: 1.5px solid #808080;
+  justify-items: center;
+  border-radius: 25px;
+  margin: auto;
+}
+
+#parceria h2 {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: bolder;
   font-style: italic;
-  margin: 2px 0 0 0;
+  border-bottom: 1.5px solid aqua;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-family: times new roman, sans-serif;
+}
+
+.parceria-card {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.paragrafo-parceria {
+  color: aliceblue;
+  font-size: 1em;
+  font-family: roboto, times new roman, sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.segundo-botao {
+  display: flex;
+  width: fit-content;
+  padding: 6px 15px;
+  justify-content: center;
+  margin: 15px auto;
+  text-decoration: none;
+  color: darkred;
+  font-family: roboto, times new roman, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 2px solid #808080;
+  border-bottom: 2px solid darkred;
+  border-radius: 20px;
 }
 
 #style-space {
-  width: 90%;
+   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px auto;
-  
 }
 
 .stars {
@@ -228,11 +272,9 @@
   flex-direction: row-reverse;
   justify-content: center;
 }
-
 .stars input {
   display: none;
 }
-
 .stars label {
   font-size: 2rem;
   color: aliceblue;
@@ -248,7 +290,7 @@
   color: crimson;
 }
 
-form {
+#formulario {
   display: flex;
   border: 2px solid #808080;
   border-radius: 25px;
@@ -267,7 +309,19 @@ form {
   margin-top: 15px;
 }
 
-.button-secundario {
+.titulo-form {
+  color: aliceblue;
+  margin: 15px auto;
+  position: relative;
+}
+
+.paragrafo-form {
+  color: darkred;
+  margin: 0 auto;
+  position: relative;
+}
+
+.terceiro-botao {
   color: darkred;
   font-weight: bold;
   font-size: 1.3em;
@@ -276,17 +330,6 @@ form {
   border-bottom: 2px solid darkred;
   border-radius: 20px;
   background-color: black;
-}
-
-
-.titulo-form {
-  color: aliceblue;
-  margin-top: 0 auto;
-}
-
-.p-form {
-  color: darkred;
-  margin: 0 auto;
 }
 
 #mensagem-agradecimento {
