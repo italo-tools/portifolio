@@ -14,6 +14,7 @@
     
     <!-- css do site -->
     <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="../geral.css">
     
     <!-- script -->
     <script src="../geral.js" defer></script>
@@ -22,12 +23,12 @@
     
         <!-- menu e capa -->
     <header>
-    <img id="cabeca" src="../imagens/banner04.jpeg" alt="Capa">
-    <img id="perfil" src="../imagens/logo.png" alt="Perfil">
+    <img id="cabecalho" src="../imagens/banner04.jpeg" alt="Capa">
+    
         
 <!-- menu -->
     <div id="side-bar">
-        <i class="fa-solid fa-bars"></i>
+        <img class="perfil" src="../imagens/logo.png" alt="Perfil">
     </div>       
 <!-- Menu de navegação -->
 <nav id="menu">
@@ -43,17 +44,16 @@
         </ul>
     </div>
 </nav>
-    
+        <article id="corpo">
+        <main id="principal">
         <!-- nome -->
         <section id="nome">
         <h1>ITALO CARLOS LOPES</h1>
-        <p class="inc">Bem mais feroz se estou em desvantagem..!</p>
+        <p id="slogan">Always innovating, inspiring the future.</p>
     </section>
     </header>
   
-  <main>
-    
-    <h2 class="sobre-mim">Sobre Mim!</h2>
+    <h2 id="sobre-mim">Sobre Mim!</h2>
     
     <section class="primario sessao">
       <h3>E ai! tudo certo?</h3>
@@ -98,39 +98,35 @@
           <h4>Buscando Evolução:</h4>
           <p>No fim das contas, sou alguém que segue tentando, aprendendo e se esforçando para crescer na vida. Embora eu ter sido <br><b>bastante nerfado!</b></p>
           </article>
-       <article>
+       <article class="impulso">
           <p>Um homem vive apenas com o ar que respira, mas alcança a eternidade com seus feitos...!</p>
       </article>
       </section>
 </main>
-
+    </article>
   
   <!-- rodapé do site -->
-    <footer id="foo">
-
-    <!-- Ícones de redes sociais -->
-        <div class="h2"><h2>Me siga nas redes sociais:</h2></div>
-       <div id="social">
-        <a href="https://www.instagram.com/italo.tools?igsh=eHR3ZmgxdHpocGg4" class="ripple-link" onclick="playSound()" target="_blank"><img src="../imagens/insta.jpg" alt="icon instagram"/></a>
-        <a href="https://github.com/italo-tools" class="ripple-link" onclick="playSound()" target="_blank"><img src="../imagens/git.jpg" alt="icon github"/></a>
-           <a href="https://discord.com/users/1304330696663371837" class="ripple-link" onclick="playSound()" target="_blank"><img src="../imagens/discord.jpg" alt="icon discord"/></a>
-        <a href="https://wa.me/5537998037184?text=Ol%C3%A1%21%20Site%20maneiro%21" class="ripple-link" onclick="playSound()" target="_blank"><img src="../imagens/whats.jpg" alt="icon whatsapp"/></a>
-    </div>
-        
-        <!-- contato -->
-        <div class="h2"><h2>Entre em contato:</h2></div>
-        <div id="contato">
-            <a href="mailto:italo.frontte@email.com"><i class="fa-solid fa-envelope"></i></a>
+<footer id="finalizacao">
+    
+    <article id="rede-social">
+        <h2 class="titulo-final">Me Siga Em Minhas Redes Sociais:</h2>
+        <a class="social-link" href="https://www.instagram.com/italo.tools?igsh=eHR3ZmgxdHpocGg4" class="ripple-link" onclick="playSound()" target="_blank"><img class="social-image" src="../imagens/insta.jpg"></a>
+        <a class="social-link" href="https://github.com/italo-tools"><img class="social-image" src="../imagens/git.jpg"></a>
+        <a class="social-link" href="https://discord.com/users/1304330696663371837" class="ripple-link" onclick="playSound()" target="_blank"><img class="social-image" src="../imagens/discord.jpg"></a>
+        <a class="social-link" href="https://wa.me/5537998037184?text=Ol%C3%A1%21%20Site%20maneiro%21" class="ripple-link" onclick="playSound()" target="_blank"><img class="social-image" src="../imagens/whats.jpg"></a>
+    </article>
+    <article class="contato">
+        <h2 class="titulo-final">Entre em contato:</h2>  
+        <a href="mailto:italo.frontte@email.com"><i class="fa-solid fa-envelope"></i></a>
 <a href="tel:+5537998037184"><i class="fa-solid fa-phone"></i></a>
-        </div>
-        
-        <!-- direitos -->
-            <img class="selo" src="../imagens/selo.jpeg" alt="selo">
-        
-        <!-- Creditos -->
-        <!-- creditos da imagem do banner vai pro sensei! -->
-        <!-- Links para Política de Privacidade e Termos de Uso -->
-    <p><a href="../privacidade/index.html">Política de Privacidade</a> | <a href="../termos/index.html">Termos de Uso</a></p>
+    <article id="selo-pai">
+        <img class="selo-filho" src="../imagens/selo.jpeg"></a>
+    </article>
+    </article>
+    <article id="informar">
+        <a href="../privacidade/">Politíca de privacidade</a> | <a href="../termos/">Termos e condições</a>
+    </article>
+    <h2 class="titulo-data">Desde 08 de maio de 2025</h2>
 </footer>
            
 <!-- audio -->
