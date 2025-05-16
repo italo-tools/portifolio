@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
     <!-- tags primordiais -->
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italo C Lopes</title>
@@ -23,13 +22,11 @@
     
         <!-- menu e capa -->
     <header>
-    <img id="cabeca" src="imagens/banner04.jpeg" alt="Capa">
-    <img id="perfil" src="imagens/logo.png" alt="Perfil">
-
+    <img id="cabecalho" src="imagens/banner04.jpeg" alt="Capa">
          <!-- menu -->
     <div id="side-bar">
-        <i class="fa-solid fa-bars"></i>
-    </div>       
+<img class="perfil" src="imagens/logo.png" alt="Perfil">
+    </div>
 <!-- Menu de navegação -->
 <nav id="menu">
     <div id="vazio">
@@ -44,29 +41,29 @@
         </ul>
     </div>
 </nav>
+    </header>
     
+    <!-- Corpo da pagina -->
+    <article id="corpo">
+    <main id="principal">
         <!-- nome -->
         <section id="nome">
         <h1>ITALO CARLOS LOPES</h1>
-        <p class="inc">Always innovating, inspiring the future.</p>
+        <p id="slogan">Always innovating, inspiring the future.</p>
     </section>
-     </header>
-    
-      
-    <main class="translate" id="principal">
-        <section class="translate" id="sobre-mim">
+        <section id="sobre-mim">
+            <div id="primeiro-card">
   <h2>Sobre Mim</h2>
-  <div class="sobre-card">
     <p>
       E aí! Sou o Italo, um cara do interior de Minas Gerais, gente boa (pelo menos eu acho 😆), que curte animes, manhwas e livros, apesar de estar meio afastado das maratonas de anime ultimamente. Tenho me dedicado mais à leitura e ao treino físico, tentando manter tudo equilibrado. Solteiro aos 26 anos, com uma trajetória profissional que mais parece um menu degustação: já mexi com computação, lavoura de café, criei porcos e frangos, e fiz de tudo um pouco em serviços gerais. Gosto de uma boa companhia, mas às vezes um momento só comigo mesmo é tudo o que preciso. Sou o caçula e único homem entre cinco irmãos, na busca pela tão sonhada estabilidade e liberdade. No fim das contas, sou um cara simples, pé no chão, tentando encontrar meu caminho enquanto aproveito a jornada.
     </p>
-      <a class="button-primario" href="sobre/" class="saiba-mais">Saiba mais...!</a></div>
+      <a class="primeiro-botao" href="sobre/" class="saiba-mais">Saiba mais...!</a></div>
     </section>
         <!-- experiencias -->
-<section id="exp">
+<section id="xp">
   <h2>Experiência Profissional</h2>
 
-  <div class="exp-card">
+  <div class="xp-card">
     <i class="fas fa-code"></i>
     <div>
       <p class="cargo">Desenvolvedor Front-End</p>
@@ -74,7 +71,7 @@
     </div>
   </div>
 
-  <div class="exp-card">
+  <div class="xp-card">
     <i class="fas fa-tractor"></i>
     <div>
       <p class="cargo">Granjeiro</p>
@@ -82,7 +79,7 @@
     </div>
   </div>
 
-  <div class="exp-card">
+  <div class="xp-card">
   <i class="fas fa-seedling"></i>
   <div>
     <p class="cargo">Safrista</p>
@@ -92,7 +89,7 @@
     
      </div>
 
-  <div class="exp-card">
+  <div class="xp-card">
     <i class="fas fa-hard-hat"></i>
     <div>
       <p class="cargo">Servente de Obras</p>
@@ -100,7 +97,7 @@
     </div>
   </div>
 
-  <div class="exp-card">
+  <div class="xp-card">
     <i class="fas fa-broom"></i>
     <div>
       <p class="cargo">Serviços Gerais</p>
@@ -111,8 +108,7 @@
 </section>
 
          <!-- educação -->
-
-    <section id="estudo">
+<section id="escolaridade">
   <h2>Escolaridade</h2>
 
   <div class="edu-card">
@@ -132,20 +128,22 @@
   </div>
 </section>
 
-<section id="trabalho">
+<section id="parceria">
+    <div class="parceria-card">
   <h2>Parceria!</h2>
-    <div class="premium">
-      <p class="tarefa">Estou pegando pequenos projetos para desenvolver minhas habilidas, então se quiser algo legal a um preço bacana..!</p>
-        <a class="button-primario" href="parcerias/">Saiba mais...!</a>
     </div>
+    <div>
+      <p class="paragrafo-parceria">Estou pegando pequenos projetos para desenvolver minhas habilidas, então se quiser algo legal a um preço bacana..!</p>
+        <a class="segundo-botao" href="parcerias/">Saiba mais...!</a>
   </div>
 </section>
+</main>
 
 <!-- avaliação -->
 <div id="style-space">
-    <form action="https://formspree.io/f/meogvdop" method="post">
+    <form id="formulario" action="https://formspree.io/f/meogvdop" method="post">
         <h3 class="titulo-form">Deixe seu feedback!</h3>
-    <p class="p-form">Sua opinião é importante..!</p>
+    <p class="paragrafo-form">Sua opinião é importante..!</p>
         <label for="avaliacao">Avaliação:</label>
 <div class="stars">
     <input type="radio" id="estrela5" name="avaliacao" value="5">
@@ -171,42 +169,35 @@
 
 <label for="comentarios"></label>
 <textarea id="comentarios" name="comentarios" class="style-form" rows="4" placeholder="Comentario:"required></textarea>
-<button class="button-secundario" type="submit">Enviar</button>
+<button class="terceiro-botao" type="submit">Enviar</button>
 </form>
 </div>
-</main>
 
         <!-- rodapé do site -->
-    <footer id="foo">
-
-    <!-- Ícones de redes sociais -->
-        <div class="h2"><h2>Me siga nas redes sociais:</h2></div>
-       <div id="social">
-        <a href="https://www.instagram.com/italo.tools?igsh=eHR3ZmgxdHpocGg4" class="ripple-link" onclick="playSound()" target="_blank"><img src="imagens/insta.jpg" alt="icon instagram"/></a>
-        <a href="https://github.com/italo-tools" class="ripple-link" onclick="playSound()" target="_blank"><img src="imagens/git.jpg" alt="icon github"/></a>
-           <a href="https://discord.com/users/1304330696663371837" class="ripple-link" onclick="playSound()" target="_blank"><img src="imagens/discord.jpg" alt="icon discord"/></a>
-        <a href="https://wa.me/5537998037184?text=Ol%C3%A1%21%20Site%20maneiro%21" class="ripple-link" onclick="playSound()" target="_blank"><img src="imagens/whats.jpg" alt="icon whatsapp"/></a>
-    </div>
-        
-        <!-- contato -->
-        <div class="h2"><h2>Entre em contato:</h2></div>
-        <div id="contato">
-            <a href="mailto:italo.frontte@email.com"><i class="fa-solid fa-envelope"></i></a>
+<footer id="finalizacao">
+    
+    <article id="rede-social">
+        <h2 class="titulo-final">Me Siga Em Minhas Redes Sociais:</h2>
+        <a class="social-link" href="https://www.instagram.com/italo.tools?igsh=eHR3ZmgxdHpocGg4" class="ripple-link" onclick="playSound()" target="_blank"><img class="social-image" src="imagens/insta.jpg"></a>
+        <a class="social-link" href="https://github.com/italo-tools"><img class="social-image" src="imagens/git.jpg"></a>
+        <a class="social-link" href="https://discord.com/users/1304330696663371837" class="ripple-link" onclick="playSound()" target="_blank"><img class="social-image" src="imagens/discord.jpg"></a>
+        <a class="social-link" href="https://wa.me/5537998037184?text=Ol%C3%A1%21%20Site%20maneiro%21" class="ripple-link" onclick="playSound()" target="_blank"><img class="social-image" src="imagens/whats.jpg"></a>
+    </article>
+    <article class="contato">
+        <h2 class="titulo-final">Entre em contato:</h2>  
+        <a href="mailto:italo.frontte@email.com"><i class="fa-solid fa-envelope"></i></a>
 <a href="tel:+5537998037184"><i class="fa-solid fa-phone"></i></a>
-        </div>
-        
-        <!-- direitos -->
-            <img class="selo" src="imagens/selo.jpeg" alt="selo">
-    
-        <!-- Links para Política de Privacidade e Termos de Uso -->
-    <p><a href="privacidade/">Política de Privacidade</a> | <a href="termos/">Termos de Uso</a></p>
-    <p>site criado em 08/05/2025</p>
-    
-   <!-- atualizações -->
- <p>Última atualização: 15/05/2025 -- 13:15</p>
-</footer>
+    <article id="selo-pai">
+        <img class="selo-filho" src="imagens/selo.jpeg"></a>
+    </article>
+    </article>
+    <article id="informar">
+        <a href="privacidade/">Politíca de privacidade</a> | <a href="termos/">Termos e condições</a>
+    </article>
+    <h2 class="titulo-data">Desde 08 de maio de 2025</h2>
+    </footer>
            
 <!-- audio -->
-<audio id="click-sound" src="https://raw.githubusercontent.com/italo-fronte/page/main/sons/click.mp3" preload="auto"></audio>
+<audio id="click-sound" src="https://raw.githubusercontent.com/italo-tools/page/main/sons/click.mp3" preload="auto"></audio>
 </body>
-        </html>
+</html>
