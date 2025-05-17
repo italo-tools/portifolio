@@ -1,4 +1,96 @@
-/* Sobre mim */
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+/* cabeçalho e menu */
+#cabecalho {
+  width: 100%;
+  display: block;
+}
+
+#vazio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  display: none;
+  z-index: 900;
+}
+
+#side-bar .perfil {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.perfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid aqua;
+}
+
+#menu {
+  position: fixed;
+  top: -200vh;
+  left: 0;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: top 0.3s ease;
+  z-index: 1000;
+}
+
+#menu.active {
+  top: 0;
+}
+
+#menu ul {
+  margin: 4rem 30px 0 10px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#menu .menu-list {
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+
+#menu a {
+  font-size: 1.7em;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Times New Roman", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* nome e slogan */
+#nome {
+  text-align: center;
+  color: white;
+}
+
+#slogan {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* sobre mim */
 #sobre-mim {
   text-align: center;
   width: fit-content;
@@ -12,80 +104,239 @@
   font-weight: bold;
 }
 
-
-/*Sessão e cards */
-.sessao {
-  margin-bottom: 20px;
-}
-
-/* primario */
-.primario {
-  text-align: center;
-  border: 1px solid aqua;
-  padding: 10px;
+/* Seções */
+.primeiro-bloco {
+  width: 90%;
   margin: 25px auto;
-  border-radius: 30px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* secundario */
-.secundario {
-  margin: 25px auto;
-  text-align: center;
-  border: 1px solid #808080;
-  padding: 10px;
-  border-radius: 30px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Terciário */
-.terciario {
-  margin: 25px auto;
-  text-align: center;
-  border: 1px solid aquamarine;
   padding: 20px;
+  text-align: center;
   border-radius: 30px;
+  border: 2px solid crimson;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
+
 }
 
-/* status */
-.status {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 165px;
+.primeiro-bloco:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.segundo-bloco{
+  width: 90%;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid cyan;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+.segundo-bloco:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.terceiro-bloco {
+  width: 90%;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid darkred;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+.terceiro-bloco:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.quarto-bloco {
+  width: 90%;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid aqua;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+.quarto-bloco:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.quinto-bloco{
+  width: 90%;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid aquamarine;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+.quinto-bloco:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.sexto-bloco {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 25px auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Títulos */
-.primario h3, 
-.secundario h3, 
-.terciario h3, 
-.secundario h4 {
-  margin: 10px auto;
-  font-size: 1.5em;
-  color: white;
-  font-family: "Times New Roman", sans-serif;
-  font-weight: bold;
-  border-bottom: 4px solid #808080;
-  padding: 8px 15px;
+.primeiro-bloco h3,
+.segundo-bloco h3,
+.terceiro-bloco h3,
+.quarto-bloco h3,
+.quinto-bloco h3,
+.sexto-bloco h3,
+.segundo-bloco h4 {
+  text-align: center;
   border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.primeiro-bloco h3 {
+  display: flex;
   width: fit-content;
-  white-space: nowrap;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid cyan;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.segundo-bloco h3 {
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid cyan;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.segundo-bloco h4 {
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid crimson;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.terceiro-bloco h3{
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid aqua;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.quarto-bloco h3 {
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid orange;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.quinto-bloco h3 {
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid yellow;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
+}
+
+.sexto-bloco  h3 {
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  border-bottom: 4px solid green;
+  border-radius: 25px;
+    text-align: center;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 1.4rem;
+  font-family: times new roman, sans-serif;
 }
 
 /* Parágrafos */
-.primario p, 
-.secundario p, 
-.terciario p {
-  text-align: center;
+.primeiro-bloco p,
+.segundo-bloco p,
+.terceiro-bloco p,
+.quarto-bloco p,
+.quinto-bloco p,
+.sexto-bloco p {
   color: white;
-  font-family: Georgia, sans-serif;
+  font-family: georgia, sans-serif;
+  font-style: italic;
   font-size: 1rem;
 }
 
-/* Cartão de Motivação */
+/* sessão motivacional */
 .motivacao {
+  width: 90%;
   margin: 25px auto;
   text-align: center;
   border: 3px solid #808080;
@@ -94,7 +345,6 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Cartão Evoluir */
 .evoluir {
   margin: 25px auto;
   text-align: center;
@@ -102,6 +352,12 @@
   padding: 10px;
   border-radius: 30px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+.evoluir:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .evoluir h4 {
@@ -115,7 +371,6 @@
   border-radius: 25px;
   width: fit-content;
   white-space: nowrap;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .evoluir p {
@@ -125,16 +380,21 @@
   font-size: 1em;
 }
 
-/* motivação */
 .impulso {
   margin: 50px auto;
   text-align: center;
-  border: 3px solid aquamarine;
+  border: 1px solid aquamarine;
   padding: 10px;
   border-radius: 30px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.1s ease;
   font-size: 0.8em;
   font-style: italic;
   color: aliceblue;
   font-family: Georgia, sans-serif;
+}
+
+.impulso:active {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
