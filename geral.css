@@ -8,7 +8,7 @@ body {
 }
 
 /* menu interativo */
-#vazio {
+#espaco-vazio {
   position: fixed;
   top: 0;
   left: 0;
@@ -88,11 +88,11 @@ body {
   border-bottom: 2px solid aliceblue;
 }
 
-#nome {
+#meu-nome {
   justify-items: center;
 }
 
-#nome h1 {
+#meu-nome h1 {
   display: flex;
   flex-wrap: nowrap;
   color: aliceblue;
@@ -101,7 +101,7 @@ body {
   font-family: times new roman, sans-serif;
 }
 
-#slogan {
+#frase {
   display: flex;
   flex-wrap: nowrap;
   color: aqua;
@@ -111,7 +111,7 @@ body {
 }
 
 /* seção de configuração do footer */
-#finalizacao {
+#rodape {
   display: inline-block;
   justify-items: center;
   width: 100%;
@@ -122,7 +122,7 @@ body {
   
 }
 
-.titulo-final {
+.titulo-contato {
   font-family: times new roman, sans-serif;
   font-style: italic;
   font-size: 1.3rem;
@@ -145,11 +145,11 @@ body {
   border: 3px solid black;
 }
 
-.contato {
+.bloco-contato {
   justify-items: center;
 }
 
-.contato i {
+.bloco-contato i {
   font-size: 40px;
   padding: 20px;
   color: darkblue;
@@ -160,14 +160,14 @@ body {
   height: 90px;
 }
 
-#informar a {
+#politica-termos a {
   text-decoration: none;
   color: darkblue;
   font-weight: bolder;
 }
 
-.titulo-data {
+.titulo-publicacao {
   color: darkcyan;
   font-family: times new roman, sans-serif;
   font-size: 1em;
-}
+  }
