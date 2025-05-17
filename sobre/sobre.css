@@ -4,8 +4,9 @@
 
 *:focus {
   outline: none !important;
+}
 
-  /* nome e slogan */
+/* nome e slogan */
 #nome {
   text-align: center;
   color: white;
@@ -324,4 +325,4 @@
 .impulso:active {
   transform: scale(1.05);
   background-color: rgba(255, 255, 255, 0.2);
-}
+  }
