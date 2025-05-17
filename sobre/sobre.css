@@ -6,32 +6,6 @@
   outline: none !important;
 }
 
-/* nome e slogan */
-#nome {
-  text-align: center;
-  color: white;
-}
-
-#slogan {
-  font-size: 1.2em;
-  font-style: italic;
-  color: #ccc;
-}
-
-/* sobre mim */
-#sobre-mim {
-  text-align: center;
-  width: fit-content;
-  padding: 6px 15px;
-  white-space: nowrap;
-  margin: 30px auto;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  font-size: 2em;
-  color: white;
-  font-family: "Times New Roman", sans-serif;
-  font-weight: bold;
-}
-
 /* Seções */
 .primeiro-bloco {
   width: 90%;
