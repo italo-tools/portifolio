@@ -1,6 +1,6 @@
 // menu 
 const menu = document.getElementById("menu");
-const menuOverlay = document.getElementById("vazio");
+const menuOverlay = document.getElementById("espaco-vazio");
 const toggleButton = document.getElementById("side-bar");
 const menuLinks = document.querySelectorAll("#menu a");
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // formulario
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
+    const form = document.querySelector("formulario");
     const mensagem = document.createElement("p");
     mensagem.innerText = "Muito obrigado por sua avaliação! 😋";
     mensagem.id = "mensagem-agradecimento";
