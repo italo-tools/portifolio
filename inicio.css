@@ -102,7 +102,7 @@
 }
 
 #experiencia {
-  width: 90%;
+  width: 95%;
   border: 1.5px solid #808080;
   justify-items: center;
   border-radius: 25px;
@@ -111,6 +111,7 @@
 
 #experiencia h2 {
   display: flex;
+  width: fit-content;
   flex-wrap: nowrap;
   color: white;
   font-weight: bolder;
@@ -158,7 +159,7 @@
 }
 
 #escolaridade {
-  width: 90%;
+  width: 95%;
   border: 1.5px solid #808080;
   justify-items: center;
   border-radius: 25px;
@@ -167,6 +168,7 @@
 
 #escolaridade h2 {
   display: flex;
+  width: fit-content;
   flex-wrap: nowrap;
   color: white;
   font-weight: bolder;
@@ -213,7 +215,7 @@
 }
 
 #parceria {
-  width: 90%;
+  width: 95%;
   border: 1.5px solid #808080;
   justify-items: center;
   border-radius: 25px;
@@ -222,6 +224,7 @@
 
 #parceria h2 {
   display: flex;
+  width: fit-content;
   flex-wrap: nowrap;
   color: white;
   font-weight: bolder;
