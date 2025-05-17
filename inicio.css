@@ -1,24 +1,30 @@
 /* Topo do corpo da pagina */
-#corpo {
+* {
+  user-select: none;
+}
+
+#corpo-da-pagina {
   width: 100%;
   justify-content: center;
   
   
 }
 
-#principal {
-  width:100%;
+#centro-da-pagina {
+  display: block;
+  margin: 10px auto;
+  width:95%;
   justify-items: center;
   
 }
 
-#nome {
+#meu-nome {
   color: white;
   
   
 }
 
-#nome h1 {
+#meu-nome h1 {
   display: flex;
   text-align: center;
   flex-wrap: nowrap;
@@ -27,7 +33,7 @@
   font-size: 1.7em;
 }
 
-#nome p {
+#meu-nome p {
   display: flex;
   text-align: center;
   flex-wrap: nowrap;
@@ -37,7 +43,7 @@
   font-family: roboto, georgia, sans-serif;
 }
 
-#nome #slogan {
+#meu-nome #frase {
   color: aqua;
   
 }
@@ -95,7 +101,7 @@
   position: relative;
 }
 
-#xp {
+#experiencia {
   width: 90%;
   border: 1.5px solid #808080;
   justify-items: center;
@@ -103,7 +109,7 @@
   
 }
 
-#xp h2 {
+#experiencia h2 {
   display: flex;
   flex-wrap: nowrap;
   color: white;
@@ -115,7 +121,7 @@
   font-family: times new roman, sans-serif;
 }
 
-.xp-card {
+.experiencia-card {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -126,12 +132,12 @@
   margin-bottom: 15px;
 }
 
-.xp-card:hover {
+.experiencia-card:hover {
   transform: scale(1.02);
   background-color: rgba(255, 255, 255, 0.10);
 }
 
-.xp-card i {
+.experiencia-card i {
   color: white;
   font-size: 25px;
 }
@@ -171,7 +177,7 @@
   font-family: times new roman, sans-serif;
 }
 
-.edu-card {
+.educacao-card {
   border: 1.5px solid aquamarine;
   display: flex;
   align-items: center;
@@ -189,7 +195,7 @@
   font-family: roboto, times new roman, sans-serif;
 }
 
-.edu-card i {
+.educacao-card i {
   color: white;
   font-size: 25px;
   
@@ -201,7 +207,7 @@
   font-family: roboto, times new roman, sans-serif;
 }
 
-.edu-card:hover {
+.educacao-card:hover {
   transform: scale(1.02);
   background-color: rgba(255, 255, 255, 0.10);
 }
@@ -267,26 +273,26 @@
   margin: 30px auto;
 }
 
-.stars {
+.strelas {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
 }
-.stars input {
+.strelas input {
   display: none;
 }
-.stars label {
+.strelas label {
   font-size: 2rem;
   color: aliceblue;
   cursor: pointer;
 }
 
-.stars input:checked ~ label {
+.strelas input:checked ~ label {
   color: crimson;
 }
 
-.stars label:hover,
-.stars label:hover ~ label {
+.strelas label:hover,
+.strelas label:hover ~ label {
   color: crimson;
 }
 
@@ -299,7 +305,7 @@
   width: 100%;
 }
 
-.style-form {
+.style-formulario {
   border: 1.5px solid #808080;
   color: white;
   font-weight: bold;
@@ -309,13 +315,13 @@
   margin-top: 15px;
 }
 
-.titulo-form {
+.titulo-formulario {
   color: aliceblue;
   margin: 15px auto;
   position: relative;
 }
 
-.paragrafo-form {
+.paragrafo-formulario {
   color: darkred;
   margin: 0 auto;
   position: relative;
@@ -345,4 +351,4 @@
     width: fit-content;
     margin-top: 100px;
     display: none;
-  }
+}
