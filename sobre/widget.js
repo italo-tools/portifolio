@@ -31,7 +31,7 @@
       }
     ];
 
-    let index = 0;
+    let index = 1;
 
     function aplicarTema(theme) {
       const root = document.querySelector(':root');
@@ -45,13 +45,13 @@
       root.style.setProperty('--cor-texto', theme.textColor);
     }
 
-    document.getElementById("card").addEventListener("click", function () {
-      this.classList.add("fade");
-      setTimeout(() => {
+document.getElementById("card").addEventListener("click", function () {
+    this.classList.add("fade");
+
+    setTimeout(() => {
         index = (index + 1) % themes.length;
         aplicarTema(themes[index]);
+        this.style.opacity = "1";
         this.classList.remove("fade");
-      }, 500);
-    });
-
-    aplicarTema(themes[0]);
+    }, 500);
+});
