@@ -15,9 +15,11 @@
     <!-- css do site -->
     <link rel="stylesheet" href="sobre.css">
     <link rel="stylesheet" href="../geral.css">
+    <link rel="stylesheet" href="../widgats/widget.css">
     
     <!-- script -->
     <script src="../geral.js" defer></script>
+    <script src="widget.js" defer></script>
 </head>
 <body>
     
@@ -55,23 +57,23 @@
   
     <h2 id="sobre-mim">Sobre Mim!</h2>
     
-    <section class="primario sessao">
+    <section class="primeiro-bloco">
       <h3>E ai! tudo certo?</h3>
       <p>Sou <b>Italo</b>, natural de Santa Rosa da Serra, Minas Gerais, mas há mais de uma década vivendo em Pará de Minas. Caçula da dona Marquiria, único homem entre os irmãos, com 26 anos e uma jornada de anos buscando independência e estabilidade.</p>
     </section>
-    <section class="sessao secundario">
+    <section class="segundo-bloco">
       <h3>Minha Trajetória:</h3>
       <p>Passei por diversas áreas e cada experiência moldou quem sou hoje:<br><br>&#127793; Safrista: Desde cedo trabalhei na colheita de café, aprendendo o valor do esforço físico.<br><br>
           🛠️ Serviços gerais: Já fui ajudante de carpinteiro, trabalhei em cisternas, capina e muito mais.<br><br>
           🐷 Granjeiro: Meu primeiro emprego foi em granjas de suínos, atuando desde a gestação até a fase de engorda.<br><br>
           💻 Desenvolvedor Front-End: Criei projetos pessoais e meu site “Italo Carlos Lopes” como uma forma de aprendizado e evolução.</p>
     </section>
-      <section class="sessao primario">
+      <section class="terceiro-bloco">
       <h3>Meu Objetivo:</h3>
       <p>Não busco luxo ou grandes ambições. Quero minha <b>independência</b> e um futuro mais <b>tranquilo</b>, construído com dedicação e aprendizado constante.</p>
       </section>
       
-      <section class="sessao secundario">
+      <section class="quarto-bloco">
           <h3>Meus Pontos Fortes:</h3>
           <p>⚓ Responsabilidade: Levo meu trabalho a sério e sempre encaro desafios de frente.<br><br>
               🔥 Adaptabilidade: Consigo me virar bem em diferentes áreas e funções.
@@ -81,17 +83,47 @@
               ✋ Dificuldade em dizer não: estou evoluindo para ter um posicionamento mais firme e equilibrado.</p>
       </section>
       
-      <section class="sessao terciario">
+      <section class="quinto-bloco">
           <h3>O Que Me Faz Bem:</h3>
           <p>📚 Leitura: gosto de livros técnicos e HQs asiáticas, principalmente chineses e coreanos.<br><br>
 🏋️ Atividade física: Gosto de me movimentar e manter a rotina ativa.</br><br>
 🎞️ Animes: Já fui muito fã, mas com o tempo passei a assistir menos.</p>
       </section>
       
-      <section class="sessao primario">
-          <h3>Meus Estudos:</h3>
-          <p>Finalizei o ensino médio e estou focado em aprimorar meus conhecimentos no desenvolvimento <b>front-end</b>, estudando <b>React, Angular, JS, TypeScript</b> e outras tecnologias. No futuro, quero aprender <b>back-end</b> e também estudar <b>inglês</b> e <b>japonês</b> para abrir novas oportunidades.</p>
-         <img class="status" src="https://github-readme-stats.vercel.app/api/top-langs/?username=italo-tools&layout=compact&locale=pt-br&border_radius=10&bg_color=000000&text_color=ffffff&title_color=00ffff&icon_color=ffd700" alt="Linguagens mais usadas">
+      <section class="sexto-bloco">
+    <div class="section-header">
+        <h3>Meus estudos:</h3>
+        <p>Finalizei o ensino médio e estou focado em aprimorar meus conhecimentos no desenvolvimento <b>front-end</b>, estudando <b>React, Angular, JS, TypeScript</b> e outras tecnologias. No futuro, quero aprender <b>back-end</b> e também estudar <b>inglês</b> e <b>japonês</b> para abrir novas oportunidades.</p>
+    </div>
+
+    <div class="content-wrapper">
+    <div class="item">
+      <h2>Minhas gambiarras no Git Hub:</h2>
+      <p>Se você não é da área, talvez nunca tenha visto esse card antes. Ele está conectado ao meu GitHub e mostra, em tempo real, as linguagens que eu mais utilizo por lá.</p>
+      <img class="item" src="https://github-readme-stats.vercel.app/api/top-langs/?username=italo-tools&layout=compact&locale=pt-br&border_radius=10&bg_color=000000&text_color=ffffff&title_color=00ffff&icon_color=ffd700" alt="Linguagens mais usadas">
+    </div>
+
+    <div class="item">
+      <h3>Progresso em Idiomas:</h3>
+      <p>Esse card era pra mostrar meu progresso em inglês e japonês… mas ainda nem comecei a estudar! Mas como a página é minha, boto o que eu quiser, né? Se eu já sei dizer arigato e kiss me, já é alguma coisa!</p>
+
+      <div id="card">
+        <div class="progresso-container">
+          <h5>Progresso / Japonês</h5>
+          <div class="barra-wrapper">
+            <div class="progresso-bar" id="progressBar1">10%</div>
+          </div>
+        </div>
+
+        <div class="progresso-container">
+          <h5 class="ingles">Progresso / Inglês</h5>
+          <div class="barra-wrapper-2">
+            <div class="progresso-bar-2" id="progressBar2">5%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       </section>
       <section class="motivacao">
           <article class="evoluir">
@@ -132,4 +164,4 @@
 <!-- audio -->
 <audio id="click-sound" src="https://raw.githubusercontent.com/italo-tools/page/main/sons/click.mp3" preload="auto"></audio>
 </body>
-</html>
+        </html>
